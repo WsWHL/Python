@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+{% for acticle in acticles %}
+    <h1>{{ acticle.Title }}</h1>
+    <h2>{{ acticle.Content }}</h2>
+    <p>{{ acticle.Status }}</p>
+    <p>{{ acticle.CreateUser }}</p>
+    <i>{{ acticle.CreateTime }}</i>
+{% endfor %}
+</body>
+</html>
